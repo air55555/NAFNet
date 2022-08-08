@@ -149,8 +149,10 @@ for fname in filenames:
             print(str(my_file))
             rc = check_image_by_convnext(str(dir+fname),
                                          convnext_model, transforms)
-            rc = check_image_by_convnext(str(my_file),
+            rc2 = check_image_by_convnext(str(my_file),
                                          convnext_model, transforms)
 
+            if rc2 < rc:
+                pass
 
 
